@@ -33,4 +33,5 @@ public class StorageService {
         byte[] images=ImageUtils.decompressImage(dbImageData.get().getImageData());
         return images;
     }
+
 }

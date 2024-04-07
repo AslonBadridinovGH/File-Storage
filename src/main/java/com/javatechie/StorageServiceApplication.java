@@ -23,8 +23,7 @@ public class StorageServiceApplication {
 	@PostMapping
 	public ResponseEntity<?> uploadImage(@RequestParam("image")MultipartFile file) throws IOException {
 		String uploadImage = service.uploadImage(file);
-		return ResponseEntity.status(HttpStatus.OK)
-				.body(uploadImage);
+		return ResponseEntity.status(HttpStatus.OK).body(uploadImage);
 	}
 
 	@GetMapping("/{fileName}")
